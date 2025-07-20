@@ -36,23 +36,23 @@ function About() {
             <img src={myImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h1 className="project-heading" id="skillset">
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading">
+        <h1 className="project-heading" id="tools">
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
   
-        <h1 className="project-heading">
+        <h1 className="project-heading" id="leadership">
           <strong className="purple">Leadership</strong> Roles
         </h1>
         <LeadershipRoles />
    
-        <h1 className="project-heading">
+        <h1 className="project-heading" id="achievements">
           <strong className="purple">Achievements</strong>
         </h1>
         <Achievements />
