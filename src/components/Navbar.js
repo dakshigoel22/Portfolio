@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -19,6 +20,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const navigate = useNavigate();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -29,6 +31,18 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  const handleNavigation = (section) => {
+    navigate('/about');
+    updateExpanded(false);
+    
+    setTimeout(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
 
   return (
     <Navbar
@@ -59,14 +73,29 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
+            <Nav.Item className="about-dropdown-wrapper">
+              <Nav.Link 
+                as={Link} 
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className="about-nav-link"
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
+              <div className="custom-dropdown-menu">
+                <div className="dropdown-item" onClick={() => handleNavigation('skillset')}>
+                  Skillset
+                </div>
+                <div className="dropdown-item" onClick={() => handleNavigation('tools')}>
+                  Tools
+                </div>
+                <div className="dropdown-item" onClick={() => handleNavigation('achievements')}>
+                  Achievements
+                </div>
+                <div className="dropdown-item" onClick={() => handleNavigation('leadership')}>
+                  Leadership Roles
+                </div>
+              </div>
             </Nav.Item>
 
             <Nav.Item>
