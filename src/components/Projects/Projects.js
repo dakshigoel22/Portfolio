@@ -79,7 +79,6 @@ function Projects() {
               title="Flipkart Grid Challenge"
               description="Developed text-to-SQL LLM to interact with user metadata in Postgres DB. Fine-tuned LLaMA-2 on custom-generated data for recommendations and utilized Redis vector for low latency."
               ghLink="https://github.com/dakshigoel22/FlipkartGrid5"
-              // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -90,7 +89,6 @@ function Projects() {
               title="Age and Gender Prediction"
               description=" Deployed ESRGANs to detect age and gender from low-quality surveillance video feed.Used RetinaFace, and a weighted regression cum classification model for face detection, increasing the F1 score by 0.1."
               ghLink="https://github.com/dakshigoel22/BOSCH-Mid-Prep-IIT-Jammu"
-              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
