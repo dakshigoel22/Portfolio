@@ -8,7 +8,10 @@ import {
   SiMacos,
   SiJupyter,
   SiGooglecolab,
-  SiAwslambda
+  SiAwslambda,
+  SiGithub,
+  SiMetabase,
+  SiAmazonaws
 } from "react-icons/si";
 
 function Toolstack() {
@@ -41,6 +44,18 @@ function Toolstack() {
         <Col xs={4} md={2} className="tech-icons">
           <SiMacos />
           <span className="tech-label">macOS</span>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiGithub />
+          <span className="tech-label">GitHub</span>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiMetabase />
+          <span className="tech-label">Metabase</span>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiAmazonaws />
+          <span className="tech-label">AWS</span>
         </Col>
       </Row>
 

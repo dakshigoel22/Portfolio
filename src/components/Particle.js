@@ -14,6 +14,9 @@ function Particle() {
               value_area: 1500,
             },
           },
+          color: {
+            value: ["#c770f0", "#934cce", "#be6adf", "#d4a5e8"],
+          },
           line_linked: {
             enable: false,
             opacity: 0.03,
@@ -23,13 +26,23 @@ function Particle() {
             speed: 0.05,
           },
           size: {
-            value: 1,
+            value: 2,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 4,
+              size_min: 0.5,
+              sync: false,
+            },
           },
           opacity: {
+            value: 0.8,
+            random: true,
             anim: {
               enable: true,
               speed: 1,
-              opacity_min: 0.05,
+              opacity_min: 0.1,
+              sync: false,
             },
           },
         },

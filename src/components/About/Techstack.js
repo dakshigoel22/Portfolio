@@ -11,11 +11,12 @@ import {
   SiPytorch,
   SiKeras,
   SiNumpy,
-  // SiLangchain,
   SiFastapi,
-  SiPandas
+  SiPandas,
+  SiOpenai
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
+import { BiAnalyse } from "react-icons/bi";
 
 function Techstack() {
   return (
@@ -55,6 +56,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFastapi />
         <span className="tech-label">FastAPI</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiOpenai />
+        <span className="tech-label">OpenAI</span>
       </Col>
     </Row>
   );

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+// import Aboutcard from "./AboutCard";
 import myImg from "../../Assets/myImg.png";
 import Toolstack from "./Toolstack";
 import LeadershipRoles from "./LeadershipRoles";
@@ -14,7 +14,7 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        {/* <Row style={{ justifyContent: "center", padding: "10px" }} className="about-intro-section">
           <Col
             md={7}
             style={{
@@ -35,7 +35,7 @@ function About() {
           >
             <img src={myImg} alt="about" className="img-fluid" />
           </Col>
-        </Row>
+        </Row> */}
         <h1 className="project-heading" id="skillset">
           Professional <strong className="purple">Skillset </strong>
         </h1>
@@ -47,14 +47,7 @@ function About() {
         </h1>
         <Toolstack />
   
-        <h1 className="project-heading" id="leadership">
-          <strong className="purple">Leadership</strong> Roles
-        </h1>
         <LeadershipRoles />
-   
-        <h1 className="project-heading" id="achievements">
-          <strong className="purple">Achievements</strong>
-        </h1>
         <Achievements />
 
         {/* <Github /> */}

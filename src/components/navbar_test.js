@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -19,7 +21,6 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -43,16 +44,17 @@ function NavBar() {
     }, 100);
   };
 
-  const isHomePage = location.pathname === "/";
-  
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={`${navColour ? "sticky" : "navbar"} ${isHomePage ? "home-navbar" : "other-navbar"}`}
+      className={navColour ? "sticky" : "navbar"}
     >
       <Container>
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand" />
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -87,41 +89,26 @@ function NavBar() {
                 <div className="dropdown-item" onClick={() => handleNavigation('tools')}>
                   Tools
                 </div>
-                <div className="dropdown-item" onClick={() => handleNavigation('leadership')}>
-                  Leadership Roles
-                </div>
                 <div className="dropdown-item" onClick={() => handleNavigation('achievements')}>
                   Achievements
+                </div>
+                <div className="dropdown-item" onClick={() => handleNavigation('leadership')}>
+                  Leadership Roles
                 </div>
               </div>
             </Nav.Item>
 
-            <Nav.Item className="projects-dropdown-wrapper">
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
-                className="projects-nav-link"
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
               </Nav.Link>
-              <div className="custom-dropdown-menu">
-                <div className="dropdown-item" onClick={() => { navigate('/project'); updateExpanded(false); setTimeout(() => {
-                  const element = document.querySelector('.research-section');
-                  if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100); }}>
-                  My Research
-                </div>
-                <div className="dropdown-item" onClick={() => { navigate('/project'); updateExpanded(false); setTimeout(() => {
-                  const element = document.querySelector('.works-section');
-                  if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100); }}>
-                  Recent Works
-                </div>
-              </div>
             </Nav.Item>
 
             <Nav.Item>
@@ -134,9 +121,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                href="https://soumyajitblogs.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/dakshigoel22/Portfolio"
+                href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

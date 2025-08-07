@@ -10,6 +10,11 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
+        {props.subheading && (
+          <Card.Subtitle className="mb-3 text-muted" style={{ fontSize: "0.9em", fontStyle: "italic" }}>
+            {props.subheading}
+          </Card.Subtitle>
+        )}
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
@@ -30,7 +35,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {props.isResearch ? "Paper" : "Demo"}
           </Button>
         )}
       </Card.Body>
