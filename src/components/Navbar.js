@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BsBriefcase } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -94,6 +95,16 @@ function NavBar() {
                   Achievements
                 </div>
               </div>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsBriefcase style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="projects-dropdown-wrapper">

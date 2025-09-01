@@ -7,6 +7,7 @@ import flipkart_grid from "../../Assets/Projects/flipkart_grid.png";
 import research_2 from "../../Assets/Projects/research_2.png";
 import age_gender from "../../Assets/Projects/age_gender.png";
 import research_1 from "../../Assets/Projects/research_1.png";
+import audio from "../../Assets/Projects/audio.png";
 
 function Projects() {
   return (
@@ -89,6 +90,16 @@ function Projects() {
               title="Age and Gender Prediction"
               description=" Deployed ESRGANs to detect age and gender from low-quality surveillance video feed.Used RetinaFace, and a weighted regression cum classification model for face detection, increasing the F1 score by 0.1."
               ghLink="https://github.com/dakshigoel22/BOSCH-Mid-Prep-IIT-Jammu"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={audio}
+              isBlog={false}
+              title="Audio Quality Assessment"
+              description=" project introduces a novel approach to audio quality assessment using transformer-based deep learning architecture. The proposed model leverages the power of transformers to process audio data, providing enhanced performance over traditional approaches."
+              ghLink="https://github.com/dakshigoel22/audio-quality-assessment"
             />
           </Col>
 
