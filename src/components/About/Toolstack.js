@@ -3,62 +3,65 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
-  // SiVercel,
-  SiMacos,
   SiJupyter,
   SiGooglecolab,
   SiAwslambda,
   SiGithub,
   SiMetabase,
-  SiAmazonaws
+  SiAmazonaws,
+  SiMlflow,
+  SiDocker,
+  SiLinux,
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiGooglecolab />
-          <span className="tech-label">Google Colab</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiJupyter />
-          <span className="tech-label">Jupyter</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiVisualstudiocode />
-          <span className="tech-label">VS Code</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiPostman />
-          <span className="tech-label">Postman</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiAwslambda />
-          <span className="tech-label">AWS Lambda</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiSlack />
-          <span className="tech-label">Slack</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiMacos />
-          <span className="tech-label">macOS</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiGithub />
-          <span className="tech-label">GitHub</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiMetabase />
-          <span className="tech-label">Metabase</span>
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiAmazonaws />
-          <span className="tech-label">AWS</span>
-        </Col>
-      </Row>
-
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecolab />
+        <span className="tech-label">Google Colab</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJupyter />
+        <span className="tech-label">Jupyter</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVisualstudiocode />
+        <span className="tech-label">VS Code</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostman />
+        <span className="tech-label">Postman</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAwslambda />
+        <span className="tech-label">AWS Lambda</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+        <span className="tech-label">AWS</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithub />
+        <span className="tech-label">GitHub</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMetabase />
+        <span className="tech-label">Metabase</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMlflow />
+        <span className="tech-label">MLflow</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+        <span className="tech-label">Docker</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
+        <span className="tech-label">Linux</span>
+      </Col>
+    </Row>
   );
 }
 

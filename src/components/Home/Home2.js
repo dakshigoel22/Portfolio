@@ -4,11 +4,10 @@ import myImg from "../../Assets/myImg.png";
 import umdLogo from "../../Assets/umd_logo.svg.png";
 import iitLogo from "../../Assets/iit_logo.ong.png";
 
-import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -22,28 +21,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Dakshi Goel </span>
-            from <span className="purple"> India, </span> currently navigating the world of AI as a Master’s student in Data Science at the <span className="purple"> University of Maryland </span> .
-
-
-            <br />
-            <br />
-
-            I fell in love with machine learning during my first year and I have learnt something, I think… 🤷‍♂️ . 
-            I’ve grown increasingly passionate about building data-driven solutions that are both intelligent and impactful.
-            
-            <br />
-            <br />
-            
-            
-            When I’m not decoding the mysteries of neural networks or experimenting with data, you’ll probably find me dancing to my favorite beats, smashing the ping pong table 🏓, or planning my next spontaneous travel escape ✈️.
-            I’m all about blending logic with imagination — whether it's in AI models or the way I live life. Let’s explore, build, and maybe even groove to some algorithms along the way!
+            Hi, I’m <span className="purple">Dakshi Goel</span> from India — currently in my second year of an
+            MS in Data Science at the <span className="purple">University of Maryland</span>, where I also
+            serve as a <span className="purple">Teaching Assistant</span> for Introduction to Data Science.
+            I maintain a 4.0 GPA and spend most of my time building AI systems that actually work in the real world.
 
             <br />
-            
-        
             <br />
-            
+
+            I’ve been building with machine learning since my first year of undergrad and haven’t stopped since —
+            from LLM pipelines and agentic systems to deep learning research and forecasting models.
+
+            <br />
+            <br />
+
+            When I’m not training models or debugging pipelines, you’ll find me on the ping pong table 🏓,
+            dancing, or planning my next trip ✈️.
+
+            <br />
+            <br />
           </p>
            
             {/* <p className="home-about-body">
@@ -91,7 +87,7 @@ function Home2() {
                   }} 
                 />
                 <span style={{ fontSize: "1.1em", color: "#c770f0" }}>
-                  MS DS @ University of Maryland
+                  MS DS @ University of Maryland · GPA 4.0
                 </span>
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -160,6 +156,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:dakshi22@umd.edu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineMail />
                 </a>
               </li>
             </ul>

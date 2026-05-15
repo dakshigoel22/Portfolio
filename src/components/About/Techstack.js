@@ -1,22 +1,19 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-
-import {
-  DiPython,
-} from "react-icons/di";
+import { DiPython } from "react-icons/di";
 import {
   SiMysql,
   SiTensorflow,
   SiPytorch,
-  SiKeras,
   SiNumpy,
   SiFastapi,
   SiPandas,
-  SiOpenai
+  SiOpenai,
+  SiDocker,
+  SiScikitlearn,
+  SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
-import { BiAnalyse } from "react-icons/bi";
 
 function Techstack() {
   return (
@@ -34,8 +31,16 @@ function Techstack() {
         <span className="tech-label">MySQL</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+        <span className="tech-label">PostgreSQL</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiPandas />
         <span className="tech-label">Pandas</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNumpy />
+        <span className="tech-label">NumPy</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
@@ -46,12 +51,8 @@ function Techstack() {
         <span className="tech-label">PyTorch</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNumpy />
-        <span className="tech-label">NumPy</span>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKeras />
-        <span className="tech-label">Keras</span>
+        <SiScikitlearn />
+        <span className="tech-label">Scikit-learn</span>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFastapi />
@@ -60,6 +61,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiOpenai />
         <span className="tech-label">OpenAI</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+        <span className="tech-label">Docker</span>
       </Col>
     </Row>
   );
