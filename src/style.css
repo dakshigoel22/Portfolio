@@ -911,31 +911,14 @@ button:focus {
   border-radius: 8px;
 }
 
-/* Icon SVG image fades out on hover */
-.tech-icons svg {
-  transition: opacity 0.4s ease !important;
-}
-
-.tech-icons:hover svg {
-  opacity: 0 !important;
-}
-
-/* Label styling */
+/* Label styling — always visible below icon */
 .tech-label {
-  font-size: 0.5em;
+  display: block;
+  font-size: 0.28em;
   font-weight: bold;
   color: #333333;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.4s ease !important;
-}
-
-/* Label appears on hover */
-.tech-icons:hover .tech-label {
-  opacity: 1 !important;
+  text-align: center;
+  margin-top: 6px;
 }
 
 /* Responsive styling */
@@ -1464,4 +1447,27 @@ button:focus {
   text-decoration: none !important;
   transform: translateX(5px) !important;
   text-shadow: 0 0 10px rgba(199, 112, 240, 0.5) !important;
+}
+
+/* Patent badge chip */
+.patent-badge {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  padding: 4px 12px;
+  background-color: rgba(199, 112, 240, 0.15);
+  border: 1px solid rgba(199, 112, 240, 0.5);
+  border-radius: 20px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: #c770f0;
+}
+
+/* Hero CTA buttons */
+.hero-cta-btn {
+  font-size: 1em !important;
+  padding: 10px 24px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
 }

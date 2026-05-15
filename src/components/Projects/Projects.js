@@ -35,6 +35,7 @@ function Projects() {
                 subheading="IEEE Transactions on Artificial Intelligence | Indian Patent No. 202411053490"
                 description="The paper introduces an illumination-aware, multi-scale attention-based fusion network to enhance underwater images by correcting color distortions, restoring textures, and preserving structural details. Achieved state-of-the-art performance on multiple benchmarks, outperforming existing methods by over 7 dB in PSNR."
                 ghLink="https://github.com/yourusername/underwater-enhancement"
+                badge="🏅 Indian Patent · No. 202411053490"
               />
             </Col>
 

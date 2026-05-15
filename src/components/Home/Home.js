@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -29,6 +29,22 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+              </div>
+              <div style={{ paddingLeft: 50, paddingBottom: 30 }}>
+                <Button
+                  variant="outline-light"
+                  href="/project"
+                  className="hero-cta-btn"
+                >
+                  View My Work
+                </Button>
+                <Button
+                  variant="light"
+                  href="/resume"
+                  className="hero-cta-btn ms-3"
+                >
+                  Resume
+                </Button>
               </div>
             </Col>
             <Col
