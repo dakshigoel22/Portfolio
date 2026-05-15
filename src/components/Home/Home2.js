@@ -33,10 +33,27 @@ const featuredProjects = [
   },
 ];
 
+const STATS = [
+  { value: "5+", label: "Years Experience" },
+  { value: "10+", label: "Projects Shipped" },
+  { value: "2", label: "Papers Published" },
+  { value: "4.0", label: "GPA at UMD" },
+];
+
 function Home2() {
   return (
     <div className="featured-works-section" id="about">
       <Container>
+        {/* Stats bar */}
+        <div className="stats-bar">
+          {STATS.map((s, i) => (
+            <div key={i} className="stat-item">
+              <span className="stat-value">{s.value}</span>
+              <span className="stat-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+
         <p className="featured-label">SOME OF MY LATEST WORK</p>
         <Row style={{ justifyContent: "center" }}>
           {featuredProjects.map((proj, idx) => (
