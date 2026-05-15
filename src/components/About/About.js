@@ -1,10 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
-// import Aboutcard from "./AboutCard";
-import myImg from "../../Assets/myImg.png";
 import Toolstack from "./Toolstack";
 import LeadershipRoles from "./LeadershipRoles";
 import Achievements from "./Achievements";

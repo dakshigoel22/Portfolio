@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.7a89febd.css",
-    "main.js": "/static/js/main.d7811220.js",
+    "main.js": "/static/js/main.748a596d.js",
     "static/js/770.074a10a6.chunk.js": "/static/js/770.074a10a6.chunk.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
-    "static/media/myImg.png": "/static/media/myImg.8084ee4c7efd8d696d43.png",
-    "static/media/myImgAI_nobg.png": "/static/media/myImgAI_nobg.fe50a1bfa2702df363a2.png",
-    "static/media/myImg_nobg.png": "/static/media/myImg_nobg.5cbbb41f5f5c41a72c04.png",
+    "static/media/myImgAI.png": "/static/media/myImgAI.845473fcd9af43aeaeac.png",
+    "static/media/myImg.png": "/static/media/myImg.ad4f716864022ce58e5b.png",
     "static/media/age_gender.png": "/static/media/age_gender.7d40552564851b951b90.png",
     "static/media/emotion.png": "/static/media/emotion.eabfc16e7a146ab15778.png",
     "static/media/research_1.png": "/static/media/research_1.a9f9376b4d9e44064acf.png",
@@ -20,17 +19,16 @@
     "static/media/real_logo.png": "/static/media/real_logo.12b5aff4bbf6147cc299.png",
     "static/media/audio.png": "/static/media/audio.023e9102db8943d80658.png",
     "static/media/mozrest_logo.png": "/static/media/mozrest_logo.5f6769e7f111f88dcb9d.png",
-    "static/media/avatar.svg": "/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
     "static/media/Infineon_logo.svg": "/static/media/Infineon_logo.f2df6403395a57353561580c464d70cb.svg",
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "main.7a89febd.css.map": "/static/css/main.7a89febd.css.map",
-    "main.d7811220.js.map": "/static/js/main.d7811220.js.map",
+    "main.748a596d.js.map": "/static/js/main.748a596d.js.map",
     "770.074a10a6.chunk.js.map": "/static/js/770.074a10a6.chunk.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a89febd.css",
-    "static/js/main.d7811220.js"
+    "static/js/main.748a596d.js"
   ]
 }

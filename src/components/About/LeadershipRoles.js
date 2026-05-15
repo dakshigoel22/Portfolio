@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ImPointRight } from "react-icons/im";
-import leadership1 from "../../Assets/avatar.svg";
-import leadership2 from "../../Assets/avatar.svg";
 
 function LeadershipRoles() {
   return (

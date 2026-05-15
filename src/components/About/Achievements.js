@@ -102,15 +102,6 @@ function Achievements() {
               <p style={{ marginLeft: "30px", marginTop: "10px", marginBottom: "10px" }}>
                 Secured position in Top 5 among 75 teams pan India at Jadavpur University.
               </p>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noreferrer"
-                className="certificate-link"
-                style={{ marginLeft: "30px" }}
-              >
-                View Certificate →
-              </a>
             </li>
           </ul>
         </div>
