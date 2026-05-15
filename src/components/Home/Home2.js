@@ -1,130 +1,96 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/myImg.png";
-import umdLogo from "../../Assets/umd_logo.svg.png";
-import iitLogo from "../../Assets/iit_logo.ong.png";
-
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { HiArrowRight } from "react-icons/hi";
+
+const featuredProjects = [
+  {
+    title: "Consumer Complaints Pipeline",
+    description:
+      "Agentic pipeline that classifies customer complaints using LLMs, routes tickets with structured reasoning and confidence scoring.",
+    ghLink:
+      "https://github.com/dakshigoel22/Consumer-Complaints-Classification-Agentic-Pipeline",
+    tags: ["Agentic AI", "LLM", "Python"],
+    scope: "Project",
+  },
+  {
+    title: "Mock Interview Agent",
+    description:
+      "Multi-agent mock interview bot built with LiveKit. Conducts real-time voice interviews and provides structured LLM-evaluated feedback.",
+    ghLink: "https://github.com/dakshigoel22/mock_interview_agent",
+    tags: ["LiveKit", "LLM Agents", "Python"],
+    scope: "Project",
+  },
+  {
+    title: "Voice Agent for Real Estate",
+    description:
+      "Voice-powered real estate search with hybrid semantic search across 100+ US properties. Real-time conversational updates and smart rankings.",
+    ghLink: "https://github.com/dakshigoel22/real_hackathon25",
+    demoLink: "https://real-hackathon25-1.onrender.com/",
+    tags: ["LiveKit", "RAG", "FastAPI", "Vector Search"],
+    scope: "Hackathon",
+  },
+];
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <div className="featured-works-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p style={{ textAlign: "justify" }}>
-            Hi, I’m <span className="purple">Dakshi Goel</span> from India — currently in my second year of an
-            MS in Data Science at the <span className="purple">University of Maryland</span>, where I also
-            serve as a <span className="purple">Teaching Assistant</span> for Introduction to Data Science.
-            I maintain a 4.0 GPA and spend most of my time building AI systems that actually work in the real world.
-
-            <br />
-            <br />
-
-            I’ve been building with machine learning since my first year of undergrad and haven’t stopped since —
-            from LLM pipelines and agentic systems to deep learning research and forecasting models.
-
-            <br />
-            <br />
-
-            When I’m not training models or debugging pipelines, you’ll find me on the ping pong table 🏓,
-            dancing, or planning my next trip ✈️.
-
-            <br />
-            <br />
-          </p>
-           
-            {/* <p className="home-about-body">
-              I fell in love with programming and I have learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Python, C++, ML, DL </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building real-life &nbsp;
-              <i>
-                <b className="purple">AI Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Data Science.
-                </b>
-              </i>
-              <br />
-              <br />
-              I am passionate transforming data into actional insights by building   
-              <i><b className="purple"> forecasting models </b></i>and also 
-              <i>
-                <b className="purple">
-                  {" "}
-                  LLM applications
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> chatbots and automation tools </b>
-              </i>
-            </p> */}
-           <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginBottom: "20px" }}>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <img 
-                  src={umdLogo} 
-                  alt="UMD Logo" 
-                  style={{ 
-                    height: "50px", 
-                    marginRight: "15px",
-                    filter: "brightness(0.9)"
-                  }} 
-                />
-                <span style={{ fontSize: "1.1em", color: "#c770f0" }}>
-                  MS DS @ University of Maryland · GPA 4.0
-                </span>
+        <p className="featured-label">SOME OF MY LATEST WORK</p>
+        <Row style={{ justifyContent: "center" }}>
+          {featuredProjects.map((proj, idx) => (
+            <Col md={4} key={idx} className="featured-card-col">
+              <div className="featured-card">
+                <div className="featured-card-header">
+                  <span className="featured-scope-badge">{proj.scope}</span>
+                </div>
+                <h3 className="featured-card-title">{proj.title}</h3>
+                <p className="featured-card-desc">{proj.description}</p>
+                <div className="featured-card-tags">
+                  {proj.tags.map((t, i) => (
+                    <span key={i} className="featured-tag">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="featured-card-links">
+                  <a
+                    href={proj.ghLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="featured-link"
+                  >
+                    ↗ Code
+                  </a>
+                  {proj.demoLink && (
+                    <a
+                      href={proj.demoLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="featured-link"
+                    >
+                      ↗ Live
+                    </a>
+                  )}
+                </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <img 
-                  src={iitLogo} 
-                  alt="IIT Jammu Logo" 
-                  style={{ 
-                    height: "50px", 
-                    marginRight: "15px",
-                    filter: "brightness(0.9)"
-                  }} 
-                />
-                <span style={{ fontSize: "1.1em", color: "#c770f0" }}>
-                  B.Tech EE & CS @ IIT Jammu
-                </span>
-              </div>
-            </div>
-          </Col>
-          {/* <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col> */}
-          <Col md={4} style={{ paddingBottom: 10, paddingTop: 80}}>
-              <img
-                src={myImg}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "400px", borderRadius: "20px" }}
-              />
             </Col>
+          ))}
         </Row>
+
+        <div className="featured-view-all">
+          <a href="/project" className="view-all-link">
+            View all projects{" "}
+            <HiArrowRight style={{ verticalAlign: "middle" }} />
+          </a>
+        </div>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -132,18 +98,17 @@ function Home2() {
                   href="https://github.com/dakshigoel22"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-              
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/dakshi-iit/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -172,7 +137,8 @@ function Home2() {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </div>
   );
 }
+
 export default Home2;

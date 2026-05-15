@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
@@ -20,7 +20,6 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -44,14 +43,12 @@ function NavBar() {
     }, 100);
   };
 
-  const isHomePage = location.pathname === "/";
-  
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={`${navColour ? "sticky" : "navbar"} ${isHomePage ? "home-navbar" : "other-navbar"}`}
+      className={navColour ? "sticky navbar" : "navbar"}
     >
       <Container>
         <Navbar.Toggle

@@ -23,8 +23,8 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/dakshigoel22"
-                style={{ color: "#333333" }}
-                target="_blank" 
+                style={{ color: "#aaaaaa" }}
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -33,8 +33,8 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/dakshi-iit/"
-                style={{ color: "#333333" }}
-                target="_blank" 
+                style={{ color: "#aaaaaa" }}
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -43,8 +43,8 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/dakshigoel/"
-                style={{ color: "#333333" }}
-                target="_blank" 
+                style={{ color: "#aaaaaa" }}
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
