@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b125aa11.css",
-    "main.js": "/static/js/main.c986e52f.js",
-    "static/js/426.931a1449.chunk.js": "/static/js/426.931a1449.chunk.js",
+    "main.css": "/static/css/main.919b3387.css",
+    "main.js": "/static/js/main.18d78540.js",
     "static/js/770.074a10a6.chunk.js": "/static/js/770.074a10a6.chunk.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
     "static/media/myImgAI.png": "/static/media/myImgAI.845473fcd9af43aeaeac.png",
@@ -22,14 +21,13 @@
     "static/media/Infineon_logo.svg": "/static/media/Infineon_logo.f2df6403395a57353561580c464d70cb.svg",
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
-    "main.b125aa11.css.map": "/static/css/main.b125aa11.css.map",
-    "main.c986e52f.js.map": "/static/js/main.c986e52f.js.map",
-    "426.931a1449.chunk.js.map": "/static/js/426.931a1449.chunk.js.map",
+    "main.919b3387.css.map": "/static/css/main.919b3387.css.map",
+    "main.18d78540.js.map": "/static/js/main.18d78540.js.map",
     "770.074a10a6.chunk.js.map": "/static/js/770.074a10a6.chunk.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b125aa11.css",
-    "static/js/main.c986e52f.js"
+    "static/css/main.919b3387.css",
+    "static/js/main.18d78540.js"
   ]
 }

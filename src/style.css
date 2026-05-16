@@ -886,6 +886,9 @@ body {
 /* ── Globe + Skill Pills (Phase 4) ──────────────────────────────── */
 .globe-section {
   padding: 20px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .globe-layout {
@@ -897,7 +900,9 @@ body {
 }
 
 .globe-canvas-wrapper {
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -981,9 +986,8 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .globe-canvas-wrapper canvas {
-    width: 280px !important;
-    height: 280px !important;
+  .globe-canvas-wrapper {
+    height: 320px !important;
   }
 }
 /* ── End Globe ───────────────────────────────────────────────────── */
