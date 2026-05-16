@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a89febd.css",
-    "main.js": "/static/js/main.748a596d.js",
+    "main.css": "/static/css/main.b125aa11.css",
+    "main.js": "/static/js/main.c986e52f.js",
+    "static/js/426.931a1449.chunk.js": "/static/js/426.931a1449.chunk.js",
     "static/js/770.074a10a6.chunk.js": "/static/js/770.074a10a6.chunk.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
     "static/media/myImgAI.png": "/static/media/myImgAI.845473fcd9af43aeaeac.png",
     "static/media/myImg.png": "/static/media/myImg.ad4f716864022ce58e5b.png",
     "static/media/age_gender.png": "/static/media/age_gender.7d40552564851b951b90.png",
-    "static/media/emotion.png": "/static/media/emotion.eabfc16e7a146ab15778.png",
     "static/media/research_1.png": "/static/media/research_1.a9f9376b4d9e44064acf.png",
     "static/media/umd_logo.svg.png": "/static/media/umd_logo.svg.35aae6ac02d2bd267231.png",
     "static/media/codeEditor.png": "/static/media/codeEditor.1b585492490c8c1cace9.png",
@@ -22,13 +22,14 @@
     "static/media/Infineon_logo.svg": "/static/media/Infineon_logo.f2df6403395a57353561580c464d70cb.svg",
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
-    "main.7a89febd.css.map": "/static/css/main.7a89febd.css.map",
-    "main.748a596d.js.map": "/static/js/main.748a596d.js.map",
+    "main.b125aa11.css.map": "/static/css/main.b125aa11.css.map",
+    "main.c986e52f.js.map": "/static/js/main.c986e52f.js.map",
+    "426.931a1449.chunk.js.map": "/static/js/426.931a1449.chunk.js.map",
     "770.074a10a6.chunk.js.map": "/static/js/770.074a10a6.chunk.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a89febd.css",
-    "static/js/main.748a596d.js"
+    "static/css/main.b125aa11.css",
+    "static/js/main.c986e52f.js"
   ]
 }

@@ -2001,107 +2001,189 @@ body {
 }
 
 /* ══════════════════════════════════════════════════════════════════
-   Phase 6 — Dark Project Flashcards
+   Phase 6 — Project Flashcards (light card style)
    ══════════════════════════════════════════════════════════════════ */
 .dark-project-card {
-  background: #111111;
-  border: 1px solid #2a2a2a;
-  border-radius: 12px;
-  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .dark-project-card:hover {
+  box-shadow: 0 8px 32px rgba(199, 112, 240, 0.18);
+  transform: translateY(-2px);
   border-color: #c770f0;
-  box-shadow: 0 4px 24px rgba(199, 112, 240, 0.15);
+}
+
+/* Image preview area */
+.dark-card-image {
+  width: 100%;
+  height: 175px;
+  background: #1a1a2e;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0.9;
+}
+
+/* placeholder gradient when no image */
+.dark-card-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+/* card body */
+.dark-card-body {
+  padding: 20px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .dark-card-top {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .dark-scope-badge {
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  color: #c770f0;
-  border: 1px solid rgba(199, 112, 240, 0.5);
-  border-radius: 4px;
-  padding: 3px 10px;
+  color: #ffffff;
+  background: #c770f0;
+  border-radius: 20px;
+  padding: 3px 11px;
+  border: none;
 }
 
 .dark-research-badge {
-  color: #6eb5ff;
-  border-color: rgba(110, 181, 255, 0.4);
+  background: #a040d0;
+  color: #ffffff;
+}
+
+.dark-tech-badge {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #555;
+  background: #f0f0f0;
+  border-radius: 20px;
+  padding: 3px 11px;
 }
 
 .dark-card-title {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111111;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .dark-card-subheading {
-  font-size: 0.78rem;
-  color: #888;
+  font-size: 0.76rem;
+  color: #999;
   font-style: italic;
   margin: 0;
 }
 
 .dark-card-desc {
-  font-size: 0.86rem;
-  color: #b0b0b0;
+  font-size: 0.84rem;
+  color: #555;
   line-height: 1.65;
   margin: 0;
-  flex: 1;
 }
 
 .dark-patent-badge {
   display: inline-block;
-  font-size: 0.75rem;
-  color: #e0a800;
-  background: rgba(224, 168, 0, 0.1);
-  border: 1px solid rgba(224, 168, 0, 0.3);
-  border-radius: 4px;
-  padding: 3px 10px;
+  font-size: 0.72rem;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 20px;
+  padding: 3px 11px;
 }
 
+/* highlight bullets */
+.dark-highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.dark-highlights li {
+  font-size: 0.8rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.dark-highlights li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f97316;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+/* tech chips */
 .dark-chip-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
 }
 
 .dark-chip {
-  font-size: 0.7rem;
-  color: #777;
-  background: #222;
+  font-size: 0.68rem;
+  color: #555;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   border-radius: 4px;
-  padding: 3px 10px;
+  padding: 2px 9px;
 }
 
 .dark-card-links {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   margin-top: auto;
-  padding-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid #f0f0f0;
 }
 
 .dark-card-link {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: #777;
   text-decoration: none;
   transition: color 0.2s;
