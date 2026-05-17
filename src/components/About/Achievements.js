@@ -59,9 +59,29 @@ const credentials = [
     tags: ["75 teams", "Pan India"],
     description: "Secured a Top 5 position among 75 teams pan India at the SERB-INAE Hackathon held at Jadavpur University.",
   },
+  {
+    id: 7,
+    title: "Student Head Representative, Career Development Services",
+    issuer: "IIT Jammu",
+    category: "Leadership",
+    date: "Oct 2023 – Jun 2024",
+    tags: ["Team of 70+", "350+ Opportunities"],
+    description: "Led a team of 70+, sourced 350+ job opportunities, organized 30+ workshops, and launched a CEO Leadership Talk series. Automated lead tracking, mass mailing list updates, and report generation — reducing manual processing time by 50%.",
+    link: "https://github.com/dakshigoel22/Certifications/blob/main/CDS24_head_coordinator_certificate.jpeg",
+  },
+  {
+    id: 8,
+    title: "Dance Club Coordinator",
+    issuer: "IIT Jammu",
+    category: "Leadership",
+    date: "Jul 2021 – Feb 2022",
+    tags: ["50+ Members", "11+ Events"],
+    description: "Managed a 50+ member team, organized 11+ events, and increased outreach by 80% through collaborations. Led social media promotion and funding initiatives to boost engagement and support event execution.",
+    link: "https://github.com/dakshigoel22/Certifications/blob/main/Dance-coordinator%20.pdf",
+  },
 ];
 
-const FILTERS = ["All", "Award", "Competition", "Hackathon"];
+const FILTERS = ["All", "Award", "Competition", "Hackathon", "Leadership"];
 
 function Achievements() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -81,7 +101,7 @@ function Achievements() {
           My <strong className="purple">Credentials</strong>
         </h1>
         <p className="cred-subheading">
-          {credentials.length} achievements · click any entry to expand
+          {credentials.length} entries · click any entry to expand
         </p>
 
         <div className="cred-filters">

@@ -85,11 +85,8 @@ function NavBar() {
                 <div className="dropdown-item" onClick={() => handleNavigation('tools')}>
                   Tools
                 </div>
-                <div className="dropdown-item" onClick={() => handleNavigation('leadership')}>
-                  Leadership Roles
-                </div>
                 <div className="dropdown-item" onClick={() => handleNavigation('achievements')}>
-                  Achievements
+                  Credentials
                 </div>
               </div>
             </Nav.Item>

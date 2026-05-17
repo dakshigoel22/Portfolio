@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.919b3387.css",
-    "main.js": "/static/js/main.18d78540.js",
+    "main.css": "/static/css/main.7523fa00.css",
+    "main.js": "/static/js/main.5c05d363.js",
     "static/js/770.074a10a6.chunk.js": "/static/js/770.074a10a6.chunk.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
-    "static/media/myImgAI.png": "/static/media/myImgAI.845473fcd9af43aeaeac.png",
-    "static/media/myImg.png": "/static/media/myImg.ad4f716864022ce58e5b.png",
     "static/media/age_gender.png": "/static/media/age_gender.7d40552564851b951b90.png",
     "static/media/research_1.png": "/static/media/research_1.a9f9376b4d9e44064acf.png",
     "static/media/umd_logo.svg.png": "/static/media/umd_logo.svg.35aae6ac02d2bd267231.png",
     "static/media/codeEditor.png": "/static/media/codeEditor.1b585492490c8c1cace9.png",
     "static/media/Resume_DakshiGoel.pdf": "/static/media/Resume_DakshiGoel.272da913f7185b30783d.pdf",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/research_2.png": "/static/media/research_2.306760f976e4a4f6dac9.png",
     "static/media/flipkart_grid.png": "/static/media/flipkart_grid.7c7ffba99cf033d4ed56.png",
     "static/media/LTIMindtree_logo.svg.png": "/static/media/LTIMindtree_logo.svg.22ed127cc3101b8f4f4d.png",
@@ -21,13 +20,13 @@
     "static/media/Infineon_logo.svg": "/static/media/Infineon_logo.f2df6403395a57353561580c464d70cb.svg",
     "index.html": "/index.html",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
-    "main.919b3387.css.map": "/static/css/main.919b3387.css.map",
-    "main.18d78540.js.map": "/static/js/main.18d78540.js.map",
+    "main.7523fa00.css.map": "/static/css/main.7523fa00.css.map",
+    "main.5c05d363.js.map": "/static/js/main.5c05d363.js.map",
     "770.074a10a6.chunk.js.map": "/static/js/770.074a10a6.chunk.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.919b3387.css",
-    "static/js/main.18d78540.js"
+    "static/css/main.7523fa00.css",
+    "static/js/main.5c05d363.js"
   ]
 }

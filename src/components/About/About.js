@@ -3,7 +3,6 @@ import { Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
-import LeadershipRoles from "./LeadershipRoles";
 import Achievements from "./Achievements";
 
 function AboutHero() {
@@ -76,7 +75,6 @@ function About() {
         </h1>
         <Toolstack />
 
-        <LeadershipRoles />
         <Achievements />
       </Container>
     </Container>

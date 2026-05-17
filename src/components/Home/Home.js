@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Home2 from "./Home2";
-import myImgAI from "../../Assets/about.png";
-import myImg    from "../../Assets/about.png";
+import myImgAI from "../../Assets/myImgAI.png";
+import myImg    from "../../Assets/myImg.png";
 
 // Both images are 1024×1536 = 2:3 ratio — face centered at ~50% horizontal
 const IMG_ASPECT = 2 / 3;
@@ -32,9 +32,9 @@ function Home() {
     const applyBase = () => {
       const base = calcBase();
       const pos  = calcPos();
-      leftPanel.style.width  = base + "px";
+      leftPanel.style.width  = (base + 1) + "px";
       leftPanel.style.left   = pos  + "px";
-      rightPanel.style.width = base + "px";
+      rightPanel.style.width = (base + 1) + "px";
       rightPanel.style.right = pos  + "px";
       xp   = w / 2;
       relX = w / 2;
@@ -69,11 +69,11 @@ function Home() {
       const newLW = Math.max(0, base + offset * 0.55);
       const newRW = Math.max(0, base - offset * 0.55);
 
-      leftPanel.style.width  = newLW + "px";
+      leftPanel.style.width  = (newLW + 1) + "px";
       leftPanel.style.left   = (pos  + offset * 0.04) + "px";
       leftPanel.style.zIndex = offset > 0 ? 2 : 1;
 
-      rightPanel.style.width = newRW + "px";
+      rightPanel.style.width = (newRW + 1) + "px";
       rightPanel.style.right = (pos  - offset * 0.04) + "px";
       rightPanel.style.zIndex = offset < 0 ? 2 : 1;
 

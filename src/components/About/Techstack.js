@@ -68,6 +68,7 @@ function rotateX(p, angle) {
 }
 function project(p, cx, cy, focalLen) {
   const depth = p.z + focalLen;
+  if (Math.abs(depth) < 0.0001) return { x: cx, y: cy, scale: 1 };
   const scale = focalLen / depth;
   return { x: cx + p.x * scale, y: cy + p.y * scale, scale };
 }
