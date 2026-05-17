@@ -118,6 +118,7 @@ function GlobeTechCloud() {
     function draw() {
       const W = canvas.getBoundingClientRect().width;
       const H = canvas.getBoundingClientRect().height;
+      if (!W || !H) { rafRef.current = requestAnimationFrame(draw); return; }
       const cx = W / 2, cy = H / 2;
       const small    = W < 600;
       const radius   = Math.min(W, H) * (small ? 0.30 : 0.36);
