@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Home2 from "./Home2";
-import myImgAI from "../../Assets/myImgAI.png";
-import myImg    from "../../Assets/myImg.png";
+import myImgAI from "../../Assets/about.png";
+import myImg    from "../../Assets/about.png";
 
 // Both images are 1024×1536 = 2:3 ratio — face centered at ~50% horizontal
 const IMG_ASPECT = 2 / 3;

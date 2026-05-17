@@ -479,7 +479,8 @@ body {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: #f3f3f7 !important;
+  background-image: none !important;
 }
 .project-section-2 {
   position: relative !important;
@@ -757,13 +758,13 @@ body {
 }
 /* ── End About Hero ──────────────────────────────────────────────── */
 
-.leadership-section-wrapper,
 .achievements-section-wrapper {
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border-color) !important;
-  border-radius: 12px !important;
-  padding: 30px !important;
+  background: linear-gradient(135deg, #0e0a14 0%, #13091c 55%, #0b0810 100%) !important;
+  border: 1px solid rgba(199, 112, 240, 0.22) !important;
+  border-radius: 16px !important;
+  padding: 36px !important;
   margin-bottom: 50px !important;
+  box-shadow: 0 0 48px rgba(199, 112, 240, 0.07), 0 8px 32px rgba(0, 0, 0, 0.22) !important;
 }
 
 .achievement-item {
@@ -1821,9 +1822,13 @@ body {
   margin-bottom: 28px;
 }
 
+.achievements-section-wrapper .project-heading {
+  color: #f0f0f0 !important;
+}
+
 .cred-subheading {
   font-size: 0.88rem;
-  color: #888;
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 18px;
 }
 
@@ -1835,12 +1840,12 @@ body {
 
 .cred-filter-pill {
   background: transparent;
-  border: 1.5px solid #e5e5e5;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
   padding: 6px 18px;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #555;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   font-family: "Raleway", sans-serif;
   transition: background 0.18s, color 0.18s, border-color 0.18s;
@@ -1864,7 +1869,7 @@ body {
 }
 
 .cred-item {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .cred-item:last-child {
@@ -1887,7 +1892,7 @@ body {
 }
 
 .cred-row:hover {
-  background: rgba(199, 112, 240, 0.04);
+  background: rgba(199, 112, 240, 0.09);
 }
 
 .cred-dot {
@@ -1907,12 +1912,12 @@ body {
 .cred-title {
   font-size: 0.97rem;
   font-weight: 700;
-  color: #111;
+  color: #f0f0f0;
 }
 
 .cred-issuer {
   font-size: 0.82rem;
-  color: #888;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .cred-tags {
@@ -1936,8 +1941,8 @@ body {
 
 .cred-tag {
   font-size: 0.7rem;
-  color: #777;
-  background: #f4f4f4;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.07);
   border-radius: 4px;
   padding: 2px 8px;
 }
@@ -1952,13 +1957,13 @@ body {
 
 .cred-date {
   font-size: 0.78rem;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.35);
   font-weight: 600;
 }
 
 .cred-chevron {
   font-size: 0.65rem;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.3);
   transition: transform 0.25s ease;
   display: inline-block;
 }
@@ -2009,14 +2014,14 @@ body {
    ══════════════════════════════════════════════════════════════════ */
 .dark-project-card {
   background: #ffffff;
-  border: 1px solid #e8e8e8;
+  border: 1.5px solid #ebebeb;
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
 }
 
 .dark-project-card:hover {
