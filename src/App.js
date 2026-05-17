@@ -14,7 +14,7 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import Chatbot from "./components/Chatbot/Chatbot";
+import Chat from "./components/Chat/Chat";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,7 +33,10 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div
+        className="App"
+        id={load ? "no-scroll" : "scroll"}
+      >
         <Navbar />
         <ScrollToTop />
         <Routes>
@@ -42,10 +45,10 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
-        <Chatbot />
       </div>
     </Router>
   );

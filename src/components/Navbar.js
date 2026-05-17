@@ -14,7 +14,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { BsBriefcase } from "react-icons/bs";
+import { BsBriefcase, BsChatDots } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -136,6 +136,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/chat"
+                onClick={() => updateExpanded(false)}
+              >
+                <BsChatDots style={{ marginBottom: "2px" }} /> Chat
               </Nav.Link>
             </Nav.Item>
 
