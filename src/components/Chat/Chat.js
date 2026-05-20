@@ -100,7 +100,7 @@ export default function Chat() {
             </div>
             <div>
               <p className="chat-identity-name">DAKSHI AI</p>
-              <p className="chat-identity-sub">Powered by Groq · llama-3.1-70b</p>
+              <p className="chat-identity-sub">Powered by Groq · llama-3.3-70b</p>
             </div>
           </div>
 
