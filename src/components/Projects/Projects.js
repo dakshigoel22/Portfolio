@@ -64,16 +64,16 @@ function Projects() {
           </Row>
         </div>
 
-        {/* UMD Projects */}
+        {/* Recent Works */}
         <div className="works-section">
           <h1 className="project-heading">
-            UMD <strong className="purple">Projects</strong>
+            My Recent <strong className="purple">Works</strong>
           </h1>
           <p style={{ color: "#555" }}>
-            Projects from my MS in Data Science at the University of Maryland.
+            Applied AI, ML research, and engineering projects.
           </p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={6} className="project-card">
+            <Col md={4} className="project-card">
               <ProjectCard
                 isBlog={false}
                 scope="ML"
@@ -91,7 +91,7 @@ function Projects() {
               />
             </Col>
 
-            <Col md={6} className="project-card">
+            <Col md={4} className="project-card">
               <ProjectCard
                 isBlog={false}
                 scope="Research"
@@ -108,18 +108,6 @@ function Projects() {
                 techStack={["PyTorch", "DDP", "Depth Pro", "Vision"]}
               />
             </Col>
-          </Row>
-        </div>
-
-        {/* Recent Works */}
-        <div className="works-section">
-          <h1 className="project-heading">
-            My Recent <strong className="purple">Works</strong>
-          </h1>
-          <p style={{ color: "#555" }}>
-            Applied AI and engineering projects.
-          </p>
-          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
                 isBlog={false}

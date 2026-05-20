@@ -100,10 +100,6 @@ function Achievements() {
         <h1 className="project-heading" style={{ paddingTop: 0, marginBottom: "6px" }}>
           My <strong className="purple">Credentials</strong>
         </h1>
-        <p className="cred-subheading">
-          {credentials.length} entries · click any entry to expand
-        </p>
-
         <div className="cred-filters">
           {FILTERS.map((f) => (
             <button

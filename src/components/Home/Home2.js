@@ -34,8 +34,8 @@ const featuredProjects = [
 ];
 
 const STATS = [
-  { value: "5+", label: "Years Experience" },
-  { value: "10+", label: "Projects Shipped" },
+  { value: "1+", label: "Years Experience" },
+  { value: "4+", label: "Projects Shipped" },
   { value: "2", label: "Papers Published" },
   { value: "4.0", label: "GPA at UMD" },
 ];

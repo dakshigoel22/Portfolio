@@ -13,32 +13,32 @@ function AboutHero() {
 
       <div className="about-cards-top">
         <div className="about-card about-card-location">
-          <span className="about-card-label">📍 LOCATION · INDIA</span>
-          <div className="about-location-main">INDIA</div>
+          <span className="about-card-label">📍 LOCATION · MARYLAND, USA</span>
+          <div className="about-location-main">MARYLAND</div>
           <div className="about-location-sub">
-            28.6139° N, 77.2090° E
+            38.9897° N, 76.9378° W
           </div>
-          <div className="about-location-sub2">College Park, MD</div>
+          <div className="about-location-sub2">College Park, MD · From India</div>
         </div>
 
         <div className="about-card about-card-bio">
           <span className="about-card-label">/ ABOUT</span>
           <p className="about-bio-text">
-            MS Data Science at University of Maryland (4.0 GPA). B.Tech in EE &amp; CS from IIT Jammu.
-            Building AI at the intersection of research and production — LLMs, RAG pipelines, voice agents, forecasting.
+            MS Data Science at University of Maryland (4.0 GPA), B.Tech EE &amp; CS from IIT Jammu.
+            I'm genuinely curious about AI — I love picking up new tools, exploring new frameworks, and figuring out how things work. Getting better every day is the goal.
           </p>
-          <p className="about-bio-quote">"Where precision meets creativity."</p>
+          <p className="about-bio-quote">"Curiosity is the engine, growth is the destination."</p>
         </div>
       </div>
 
       <div className="about-cards-bottom">
         <div className="about-card about-card-mini">
           <span className="about-card-mini-title">GROWTH</span>
-          <p>Explorer of AI systems, driven by curiosity and a relentless drive to understand.</p>
+          <p>Better every day — learning new AI tools, exploring the frontier, and building on what I discover.</p>
         </div>
         <div className="about-card about-card-mini">
           <span className="about-card-mini-title">FOCUS</span>
-          <p>Depth over breadth — ship things that matter, build for impact.</p>
+          <p>Curiosity drives me. I dig into new tools, frameworks, and papers because understanding things deeply is the only way I know how to work.</p>
         </div>
         <div className="about-card about-card-mini">
           <span className="about-card-mini-title">CRAFT</span>

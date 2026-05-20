@@ -118,13 +118,13 @@ function Home() {
           <img src={myImg} alt="Researcher" className="face-img face-img-real" />
         </div>
 
-        {/* Right label — ML Researcher (same typographic style as left) */}
+        {/* Right label — ML Researcher */}
         <div className="face-label face-label-right">
           <div className="hero-title">
             <span className="hero-title-ai">ML</span>
             <span className="hero-title-eng">Researcher</span>
           </div>
-          <p className="hero-subtext">UMD · GPA 4.0 · TA</p>
+          <p className="hero-subtext">CV · NLP · Vision · UMD</p>
         </div>
 
       </div>

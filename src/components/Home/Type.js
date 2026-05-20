@@ -9,7 +9,7 @@ function Type() {
           "AI Engineer",
           "GenAI Developer",
           "ML Researcher",
-          "Teaching Assistant @ UMD",
+          "Computer Vision Researcher",
         ],
         autoStart: true,
         loop: true,
